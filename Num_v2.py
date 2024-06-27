@@ -34,3 +34,12 @@ class NumberGenerator:
         numeros = self.generate_mean_list(mu, std, length)
         numeros = [int(numeros[i]) for i in range(length)]
         return numeros, d1
+    
+    def generate_sequential(self,d1):
+        d = [41, 44, 46, 48, 49, 51, 52, 54, 56, 59]
+        std = 15
+        length = 8
+        mu = d[d1]
+        numeros = self.generate_mean_list(mu, std, length)
+        numeros = [int(numeros[i]) for i in range(length)]
+        return numeros
